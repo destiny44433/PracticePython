@@ -14,6 +14,7 @@ class CommonUtility:
     #             break
     #     return sheet.cell_value(rowNum,3)
 
+    # Excel read function
     def read_pets_value(self, Rowname1, Filename1):
         wb = xlrd.open_workbook(Filename1)
         sheet = wb.sheet_by_index(0)
